@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O'Coffee</title>
+    <!-- FAVICON -->
+    <link rel="icon" type="image/ico" href="/images/favicon.ico">     
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <% if (currentUrl === '/') { %>
+        <link rel="stylesheet" href="/css/home.css">
+    <% } %>
+    <% if (currentUrl.startsWith('/catalogue')) { %>
+        <link rel="stylesheet" href="/css/catalogue.css">
+    <% } %>
+    <% if (currentUrl === '/notre-boutique') { %>
+        <link rel="stylesheet" href="/css/boutique.css">
+    <% } %>
+    <% if (currentUrl === '/404' || '/500') { %>
+        <link rel="stylesheet" href="/css/error.css">
+    <% } %>
+    <!-- JS -->
+    <script src="/js/script.js" type="module" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img class="logo-img" src="/images/logo.svg" alt="Logo O'Coffee">
+            <strong class="logo-text">O'Coffee</strong>
+        </div>
+        <button class="menu-toggle" aria-label="Ouvrir le menu">
+            <span class="menu-icon"></span>
+        </button>
+        <nav class="nav-menu" aria-hidden="true">
+            <ul class="nav-list">
+                <li class="nav-link <%= currentUrl === '/' ? 'active' : '' %>"><a href="/">Accueil</a></li>
+                <li class="nav-link <%= currentUrl === '/catalogue' ? 'active' : '' %>"><a href="/catalogue">Catalogue</a></li>
+                <li class="nav-link <%= currentUrl === '/notre-boutique' ? 'active' : '' %>"><a href="/notre-boutique">Boutique</a></li>
+                <li class="nav-link"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>

@@ -1,0 +1,56 @@
+<%- include('../partials/header.ejs') %>
+
+<main>
+    <section class="catalog-title">
+        <h1>Notre catalogue</h1>
+    </section>
+
+    <section class="catalog">
+        <div class="filter">
+            <form action="/catalogue" method="get">
+                <div class="filter__origin">
+                    <label for="pays">Origines</label>
+                    <select name="pays" id="pays">
+                        <option value="">Toutes</option>
+                        <% for (origin of origins) { %>
+                            <option value="<%= origin.country %>"
+                                <%= origin.country === selectedCountry ? 'selected' : '' %>>
+                                <%= origin.country %>
+                            </option>
+                        <% } %>
+                    </select>
+                </div>
+                <div class="filter__type">
+                    <label for="type">Types</label>
+                    <select name="type" id="type">
+                        <option value="">Tous</option>
+                        <% for (coffeeType of coffeeTypes) { %>
+                            <option value="<%= coffeeType.name %>"
+                                <%= coffeeType.name === selectedCoffeeType ? 'selected' : '' %>>
+                                <%= coffeeType.name %></option>
+                        <% } %>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <div class="catalog-cards">
+
+            <% for (coffee of coffees) { %>
+                <div class="card catalog-card" >
+                    <img src="/images/coffees/<%= coffee.reference %>.png" alt="Photo représentant le café <%= coffee.name %>">
+                    <h3><%= coffee.name %></h3>
+                    <div class="badge">
+                        <span class="badge__origin"><%= coffee.country %></span>
+                        <span class="badge__intensity"><%= coffee.coffee_type %></span>
+                    </div>
+                    <p class="description"><%= coffee.description %></p>
+                    <a class="button discover" href="/catalogue/<%= coffee.id %>">Découvrir</a>
+                </div>
+            <% } %>
+
+        </div>
+    </section>
+</main>
+
+<%- include('../partials/footer.ejs') %>

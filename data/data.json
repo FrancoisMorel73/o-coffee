@@ -1,0 +1,191 @@
+{
+  "origin": [
+    { "id": 1, "country": "Italie" },
+    { "id": 2, "country": "Colombie" },
+    { "id": 3, "country": "Éthiopie" },
+    { "id": 4, "country": "Brésil" },
+    { "id": 5, "country": "Guatemala" },
+    { "id": 6, "country": "Kenya" },
+    { "id": 7, "country": "Indonésie" },
+    { "id": 8, "country": "Costa Rica" },
+    { "id": 9, "country": "Vietnam" },
+    { "id": 10, "country": "Tanzanie" },
+    { "id": 11, "country": "Jamaïque" },
+    { "id": 12, "country": "Rwanda" },
+    { "id": 13, "country": "Panama" },
+    { "id": 14, "country": "Pérou" },
+    { "id": 15, "country": "Hawaï" },
+    { "id": 16, "country": "Nicaragua" }
+  ],
+
+  "coffee_type": [
+    { "id": 1, "name": "Corsé" },
+    { "id": 2, "name": "Fruité" },
+    { "id": 3, "name": "Doux" },
+    { "id": 4, "name": "Acide" },
+    { "id": 5, "name": "Épicé" }
+  ],
+  
+  "coffee": [
+    {
+      "id": 1,
+      "name": "Espresso",
+      "description": "Café fort et concentré préparé en faisant passer de l'eau chaude à travers du café finement moulu.",
+      "reference": "100955890",
+      "price_per_kg": 20.99,
+      "origin_id": 1,
+      "available": true,
+      "coffee_type_id": 1
+    },
+    {
+      "id": 2,
+      "name": "Columbian",
+      "description": "Café moyennement corsé avec une acidité vive et une saveur riche.",
+      "reference": "100955894",
+      "price_per_kg": 18.75,
+      "origin_id": 2,
+      "available": true,
+      "coffee_type_id": 2
+    },
+    {
+      "id": 3,
+      "name": "Ethiopian Yirgacheffe",
+      "description": "Réputé pour son arôme floral, son acidité vive et ses notes de saveur citronnée.",
+      "reference": "105589090",
+      "price_per_kg": 22.5,
+      "origin_id": 3,
+      "available": true,
+      "coffee_type_id": 2
+    },
+    {
+      "id": 4,
+      "name": "Brazilian Santos",
+      "description": "Café doux et lisse avec un profil de saveur de noisette.",
+      "reference": "134009550",
+      "price_per_kg": 17.8,
+      "origin_id": 4,
+      "available": true,
+      "coffee_type_id": 3
+    },
+    {
+      "id": 5,
+      "name": "Guatemalan Antigua",
+      "description": "Café corsé avec des nuances chocolatées et une pointe d'épice.",
+      "reference": "256505890",
+      "price_per_kg": 21.25,
+      "origin_id": 5,
+      "available": true,
+      "coffee_type_id": 1
+    },
+    {
+      "id": 6,
+      "name": "Kenyan AA",
+      "description": "Café complexe connu pour son acidité rappelant le vin et ses saveurs fruitées.",
+      "reference": "295432730",
+      "price_per_kg": 23.7,
+      "origin_id": 6,
+      "available": true,
+      "coffee_type_id": 2
+    },
+    {
+      "id": 7,
+      "name": "Sumatra Mandheling",
+      "description": "Café profond et terreux avec un corps lourd et une faible acidité.",
+      "reference": "302932754",
+      "price_per_kg": 19.95,
+      "origin_id": 7,
+      "available": true,
+      "coffee_type_id": 1
+    },
+    {
+      "id": 8,
+      "name": "Costa Rican Tarrazu",
+      "description": "Café vif et net avec une finition propre et une acidité vive.",
+      "reference": "327302954",
+      "price_per_kg": 24.5,
+      "origin_id": 8,
+      "available": true,
+      "coffee_type_id": 2
+    },
+    {
+      "id": 9,
+      "name": "Vietnamese Robusta",
+      "description": "Café audacieux et fort avec une saveur robuste distinctive.",
+      "reference": "549549090",
+      "price_per_kg": 16.75,
+      "origin_id": 9,
+      "available": true,
+      "coffee_type_id": 5
+    },
+    {
+      "id": 10,
+      "name": "Tanzanian Peaberry",
+      "description": "Acidité vive avec un profil de saveur rappelant le vin et un corps moyen.",
+      "reference": "582954954",
+      "price_per_kg": 26.8,
+      "origin_id": 10,
+      "available": true,
+      "coffee_type_id": 2
+    },
+    {
+      "id": 11,
+      "name": "Jamaican Blue Mountain",
+      "description": "Reconnu pour sa saveur douce, son acidité vive et son absence d'amertume.",
+      "reference": "589100954",
+      "price_per_kg": 39.25,
+      "origin_id": 11,
+      "available": true,
+      "coffee_type_id": 3
+    },
+    {
+      "id": 12,
+      "name": "Rwandan Bourbon",
+      "description": "Café avec des notes florales prononcées, une acidité vive et un corps moyen.",
+      "reference": "650753915",
+      "price_per_kg": 21.9,
+      "origin_id": 12,
+      "available": true,
+      "coffee_type_id": 2
+    },
+    {
+      "id": 13,
+      "name": "Panamanian Geisha",
+      "description": "Café rare aux arômes floraux complexes, une acidité brillante et un profil de saveur distinctif.",
+      "reference": "795501340",
+      "price_per_kg": 42.0,
+      "origin_id": 13,
+      "available": true,
+      "coffee_type_id": 2
+    },
+    {
+      "id": 14,
+      "name": "Peruvian Arabica",
+      "description": "Café équilibré avec des notes de chocolat, une acidité modérée et un corps velouté.",
+      "reference": "954589100",
+      "price_per_kg": 19.4,
+      "origin_id": 14,
+      "available": false,
+      "coffee_type_id": 4
+    },
+    {
+      "id": 15,
+      "name": "Hawaiian Kona",
+      "description": "Café rare au goût riche, une acidité douce et des nuances subtiles.",
+      "reference": "958090105",
+      "price_per_kg": 55.75,
+      "origin_id": 15,
+      "available": false,
+      "coffee_type_id": 3
+    },
+    {
+      "id": 16,
+      "name": "Nicaraguan Maragogipe",
+      "description": "Café avec des notes de fruits, une acidité vive et un corps plein.",
+      "reference": "691550753",
+      "price_per_kg": 28.6,
+      "origin_id": 16,
+      "available": false,
+      "coffee_type_id": 2
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+<%- include('../partials/header.ejs') %>
+
+<main class="detail">
+
+    <div class="detail__img">
+        <img src="/images/coffees/<%= coffee.reference %>.png" alt="Photo représentant le café <%= coffee.name %>">
+    </div>
+    
+    <div class="detail__informations">
+        <h1>Notre café <%= coffee.name %></h1>
+        <p><%= coffee.description %></p>
+        <div class="characteristics">
+            <h2>Caractéristiques détaillés</h2>
+            <ul>
+                <li>Origine: <strong><%= coffee.country %></strong></li>
+                <li>Intensité: <strong><%= coffee.coffee_type %></strong></li>
+                <li>Prix: <strong><%= coffee.price %>€/kg</strong></li>
+                <li>Disponibilité: <strong><%= coffee.available ? "Oui" : "Non" %></strong></li>
+            </ul>
+        </div>
+        <div class="back">
+            <a class="button button-detail" href="/catalogue">Retour au catalogue</a>
+        </div>
+    </div>
+
+</main>
+
+<%- include('../partials/footer.ejs') %>
