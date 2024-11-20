@@ -1,7 +1,45 @@
-.atmosphere {
+.atmosphere, .knowledge {
     margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
 }
 
-.knowledge {
+.atmosphere__title, .knowledge__title {
+    width: 100%;
+}
+
+.atmosphere__text p, .knowledge__text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--text-dark);
     margin: 1rem;
+    text-align: justify;
+}
+
+.atmosphere__img img, .knowledge__img img {
+    display: none;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (min-width: 992px) {
+    .atmosphere__img img, .knowledge__img img {
+        display: block;
+    }
+    .atmosphere__img, .knowledge__img {
+        width: 40%;
+    }
+    .atmosphere__text, .knowledge__text {
+        width: 55%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .ourstore {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
 }
