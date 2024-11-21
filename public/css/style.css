@@ -8,7 +8,7 @@ body {
     --cream: #F5E9E2;
     --detail: #A67C52;
     --pastel-detail: #D4B483;
-    --green-detail: #A1C181;
+    --green-detail: #4B6F44;
     /* TEXT COLORS */
     --text-dark: #3e2723;
     --text-light: #F5E9E2;
@@ -20,6 +20,7 @@ body {
     background-color: var(--cream);
     display: flex;
     flex-direction: column;
+    font-display: swap;
 }
 
 html, body {

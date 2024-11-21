@@ -8,6 +8,12 @@ header {
     color: var(--text-light);
     position: relative;
 }
+
+a:focus {
+    outline: 2px solid var(--detail);
+    outline-offset: 4px;
+    border-radius: 20px;
+}
   
 .logo {
     display: flex;
@@ -23,8 +29,8 @@ header {
 
 .logo-text {
     font-size: 2.5rem;
-    color: var(--detail);
-    text-shadow: 2px 2px 3px rgba(78, 52, 46, 0.6);
+    color: var(--cream);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     flex: 1;
     font-family: "Pacifico", cursive;
     font-weight: 400;

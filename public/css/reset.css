@@ -48,5 +48,6 @@
 
   /* Remove style on link */
   a {
-    all: unset;
-  }
+    text-decoration: none;
+    color: inherit;
+}

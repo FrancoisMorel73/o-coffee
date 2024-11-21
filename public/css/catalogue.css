@@ -53,6 +53,12 @@
     border-top-right-radius: 20px;  
 }
 
+.catalog-card h2 {
+    font-size: 1.8rem;
+    padding: 1rem;
+    color: var(--pastel-detail);
+}
+
 .no-coffee {
     text-align: center;
     font-size: 1.5rem;

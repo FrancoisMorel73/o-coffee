@@ -41,8 +41,8 @@
             <% } %>
             <% for (coffee of coffees) { %>
                 <div class="card catalog-card" >
-                    <img src="/images/coffees/<%= coffee.reference %>.webp" alt="Photo représentant le café <%= coffee.name %>">
-                    <h3><%= coffee.name %></h3>
+                    <img src="/images/coffees/<%= coffee.reference %>.webp" loading="lazy" alt="Photo représentant le café <%= coffee.name %>">
+                    <h2><%= coffee.name %></h2>
                     <div class="badge">
                         <span class="badge__origin"><%= coffee.country %></span>
                         <span class="badge__intensity"><%= coffee.coffee_type %></span>
