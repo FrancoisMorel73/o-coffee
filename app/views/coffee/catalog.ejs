@@ -36,6 +36,9 @@
 
         <div class="catalog-cards">
 
+            <% if (coffees.length === 0) { %>
+                <p class="no-coffee">Aucun café ne correspond à votre recherche</p>
+            <% } %>
             <% for (coffee of coffees) { %>
                 <div class="card catalog-card" >
                     <img src="/images/coffees/<%= coffee.reference %>.png" alt="Photo représentant le café <%= coffee.name %>">
@@ -50,6 +53,13 @@
             <% } %>
 
         </div>
+
+        <% if (!selectedCountry && !selectedCoffeeType) { %>
+            <div class="load-more">
+                <button class="button load-more__btn">Voir plus</button>
+            </div>
+        <% } %>
+
     </section>
 </main>
 

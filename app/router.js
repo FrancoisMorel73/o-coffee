@@ -11,4 +11,6 @@ router.get('/notre-boutique', mainController.ourStore);
 router.get('/catalogue', coffeeController.catalog);
 router.get('/catalogue/:id', coffeeController.coffeeDetails);
 
+router.get('/catalogue/api/coffees', coffeeController.getPaginatedCatalog);
+
 export default router;

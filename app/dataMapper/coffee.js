@@ -1,6 +1,28 @@
 import client from '../database.js';
 
 const coffeeDataMapper = {
+    async getAll(limit = 6, offset = 0) {
+        const result = await client.query(`
+            SELECT
+                coffee.id,
+                coffee.name,
+                coffee.description,
+                coffee.reference,
+                origin.country,
+                coffee_type.name AS coffee_type
+            FROM
+                coffee
+            JOIN
+                origin ON coffee.origin_id = origin.id
+            JOIN
+                coffee_type ON coffee.coffee_type_id = coffee_type.id
+            ORDER BY
+                coffee.id DESC
+            LIMIT $1
+            OFFSET $2;
+        `, [limit, offset]);
+        return result.rows;
+    },
     async getAllFilteredByOriginAndType(country, coffeeType) {
         const result = await client.query(`
             SELECT
@@ -21,7 +43,7 @@ const coffeeDataMapper = {
             AND
                 ($2::varchar IS NULL OR coffee_type.name = $2)
             ORDER BY
-                coffee.id DESC;
+                coffee.id DESC
         `, [country, coffeeType]);
         return result.rows;
     },

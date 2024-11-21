@@ -53,6 +53,13 @@
     border-top-right-radius: 20px;  
 }
 
+.no-coffee {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    margin: 1rem;
+}
+
 /* FILTER */
 
 .filter {
@@ -116,6 +123,16 @@
     background-color: var(--dark-brown);
     transform: translateY(-2px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* BUTTON VOIR PLUS */
+
+.load-more {
+    display: flex;
+    justify-content: center;
+}
+.load-more__btn {
+    width: 30%;
 }
 
 /* /catalogue/:id => détail d'un café */
