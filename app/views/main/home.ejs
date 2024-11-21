@@ -11,7 +11,7 @@
             <a class="button" href="/catalogue">Voir notre catalogue</a>
         </div>
         <div class="presentation__img">
-            <img src="images/about.jpg" alt="table vue de haut avec huit tasses de café">
+            <img src="images/about.webp" alt="table vue de haut avec huit tasses de café">
         </div>
     </section>
 
@@ -20,7 +20,7 @@
         <div class="cards">
             <% for (coffee of coffees) { %>
                 <div class="card" >
-                    <img src="images/coffees/<%= coffee.reference %>.png" alt="Photo représentant le café <%= coffee.name %>">
+                    <img src="images/coffees/<%= coffee.reference %>.webp" alt="Photo représentant le café <%= coffee.name %>">
                     <h3><%= coffee.name %></h3>
                     <div class="badge">
                         <span class="badge__origin"><%= coffee.country %></span>
