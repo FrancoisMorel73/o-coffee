@@ -28,7 +28,7 @@ export const loadMore = async function () {
             newCoffees.forEach(coffee => {
                 const cardHTML = `
                             <div class="card catalog-card">
-                                <img src="/images/coffees/${coffee.reference}.png" alt="Photo représentant le café ${coffee.name}">
+                                <img src="/images/coffees/${coffee.reference}.webp" alt="Photo représentant le café ${coffee.name}">
                                 <h3>${coffee.name}</h3>
                                 <div class="badge">
                                     <span class="badge__origin">${coffee.country}</span>
